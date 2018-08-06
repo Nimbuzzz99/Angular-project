@@ -1,0 +1,144 @@
+<form (submit)="addPost_PI()">
+  <div class="example-container">
+  <mat-form-field>
+    <mat-label>userId</mat-label>
+    <br>
+    <input matInput type="text" [(ngModel)]="newPost_PI.userId" name="userId">
+  </mat-form-field>
+  <br>
+  <mat-form-field>
+    <mat-label>Name</mat-label>
+    <input matInput type="text" [(ngModel)]="newPost_PI.name" name="name">
+  </mat-form-field>
+  <br>
+  <mat-form-field>
+    <mat-label>Age</mat-label>
+    <input matInput type="text" [(ngModel)]="newPost_PI.age" name="age">
+  </mat-form-field>
+  <br>
+  <mat-form-field>
+    <mat-label>Contact No</mat-label> 
+    <input matInput type="text" [(ngModel)]="newPost_PI.contactNo" name="contact">
+  </mat-form-field>
+  <br>
+  <mat-form-field>
+    <mat-label>Email</mat-label>
+    <input matInput type="text" [(ngModel)]="newPost_PI.email" name="email">
+  </mat-form-field>
+</div>
+  <br>
+  <button mat-raised-button color="warn" type="submit" value="submit">Post</button>
+</form>
+
+
+
+<form (submit)="addPost_Skill()">
+  <div class="example-container">
+  <mat-form-field>
+    <mat-label>userId</mat-label>
+    <br>
+    <input matInput type="text" [(ngModel)]="newPost_Skill.skills_userId" name="skills_userId">
+  </mat-form-field>
+  <br>
+  <mat-form-field>
+    <mat-label>Skills</mat-label>
+    <input matInput type="text" [(ngModel)]="newPost_Skill.skills" name="skills">
+  </mat-form-field>
+</div>
+  <br>
+  <button mat-raised-button color="warn" type="submit" value="submit">Post</button>
+</form>
+
+
+
+
+
+<form (submit)="addPost_Exp()">
+  <div class="example-container">
+  <mat-form-field>
+    <mat-label>userId</mat-label>
+    <br>
+    <input matInput type="text" [(ngModel)]="newPost_Exp.experience_userId" name="exp_userId">
+  </mat-form-field>
+  <br>
+  <mat-form-field>
+    <mat-label>experience</mat-label>
+    <input matInput type="text" [(ngModel)]="newPost_Exp.experience" name="exp">
+  </mat-form-field>
+</div>
+  <br>
+  <button mat-raised-button color="warn" type="submit" value="submit">Post</button>
+</form>
+
+
+<form (submit)="addPost_Location()">
+  <div class="example-container">
+  <mat-form-field>
+    <mat-label>userId</mat-label>
+    <br>
+    <input matInput type="text" [(ngModel)]="newPost_Loc.location_userId" name="loc_userId">
+  </mat-form-field>
+  <br>
+  <mat-form-field>
+    <mat-label>Location</mat-label>
+    <input matInput type="text" [(ngModel)]="newPost_Loc.location" name="loc">
+  </mat-form-field>
+</div>
+  <br>
+  <button mat-raised-button color="warn" type="submit" value="submit">Post</button>
+</form>
+
+
+<form (submit)="addPost_Project()">
+  <div class="example-container">
+  <mat-form-field>
+    <mat-label>userId</mat-label>
+    <br>
+    <input matInput type="text" [(ngModel)]="newPost_Project.projects_userId" name="pro_userId">
+  </mat-form-field>
+  <br>
+  <mat-form-field>
+    <mat-label>Project</mat-label>
+    <input matInput type="text" [(ngModel)]="newPost_Project.projects" name="pro">
+  </mat-form-field>
+</div>
+  <br>
+  <button mat-raised-button color="warn" type="submit" value="submit">Post</button>
+</form>
+
+
+
+<form (submit)="addPost_Certificates()">
+  <div class="example-container">
+  <mat-form-field>
+    <mat-label>userId</mat-label>
+    <br>
+    <input matInput type="text" [(ngModel)]="newPost_Certificates.certificates_userId" name="cer_userId">
+  </mat-form-field>
+  <br>
+  <mat-form-field>
+    <mat-label>Certificates</mat-label>
+    <input matInput type="text" [(ngModel)]="newPost_Certificates.certificates" name="cer">
+  </mat-form-field>
+</div>
+  <br>
+  <button mat-raised-button color="warn" type="submit" value="submit">Post</button>
+</form>
+
+
+<form (submit)="addPost_Academy()">
+  <div class="example-container">
+  <mat-form-field>
+    <mat-label>userId</mat-label>
+    <br>
+    <input matInput type="text" [(ngModel)]="newPost_Academy.academicQual_userId" name="aca_userId">
+  </mat-form-field>
+  <br>
+  <mat-form-field>
+    <mat-label>Academic Qualification</mat-label>
+    <input matInput type="text" [(ngModel)]="newPost_Academy.academicQualification" name="Academy">
+  </mat-form-field>
+</div>
+  <br>
+  <button mat-raised-button color="warn" type="submit" value="submit">Post</button>
+</form>
