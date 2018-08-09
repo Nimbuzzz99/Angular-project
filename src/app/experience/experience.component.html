@@ -1,0 +1,37 @@
+<form (submit)="addPost_Exp()">
+    <div class="card">
+      <div class="card-body">
+      <h2>Experience</h2>  
+      <br>
+      <input placeholder="Profile Id" type="text" [(ngModel)]="newPost_Exp.profileId" name="profileId">
+    
+      <br>
+      
+      <br>
+      <input placeholder="Name of the organization" type="text" [(ngModel)]="newPost_Exp.organizationName" name="org">
+
+      <br>
+      
+      <br>
+      <input placeholder="Role" type="text" [(ngModel)]="newPost_Exp.role" name="role">
+
+      <br>
+      
+      <br>
+      <input placeholder="Start Date" type="text" [(ngModel)]="newPost_Exp.startDate" name="start">
+
+      <br>
+      
+      <br>
+      <input placeholder="End Date" type="text" [(ngModel)]="newPost_Exp.endDate" name="end">
+
+      <br>
+      
+      <br>
+      <input placeholder="Message" type="text" [(ngModel)]="newPost_Exp.message" name="message">
+    <br>
+    <br>
+    <button color="warn" type="submit" value="submit">Post</button>
+   </div>
+  </div>
+  </form>

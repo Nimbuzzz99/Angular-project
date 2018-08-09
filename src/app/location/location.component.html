@@ -1,0 +1,37 @@
+<form (submit)="addPost_Location()">
+    <div class="card">
+      <div class="card-body">
+      <h2>Location</h2>  
+      <br>
+      <input placeholder="Profile Id"type="text" [(ngModel)]="newPost_Loc.profileId" name="profileId">
+    
+      <br>
+    
+      <br>
+      <input placeholder="Address" type="text" [(ngModel)]="newPost_Loc.address" name="addr">
+
+      <br>
+    
+      <br>
+      <input placeholder="City" type="text" [(ngModel)]="newPost_Loc.city" name="city">
+
+      <br>
+    
+      <br>
+      <input placeholder="PIN" type="text" [(ngModel)]="newPost_Loc.pin" name="pin">
+
+      <br>
+    
+      <br>
+      <input placeholder="State" type="text" [(ngModel)]="newPost_Loc.state" name="state">
+
+      <br>
+    
+      <br>
+      <input placeholder="Country" type="text" [(ngModel)]="newPost_Loc.country" name="cont">
+     <br>
+     <br>
+    <button color="warn" type="submit" value="submit">Post</button>
+   </div>
+   </div>
+  </form>

@@ -1,6 +1,10 @@
 export class UserCertificates {
-    certificates_userId:String
-    certificates:String
+    profileId:String
+    trainingName:String
+    trainingId:String
+    authority:String
+    duration:String
+    skillsTested:String
 
     constructor(){}
 }

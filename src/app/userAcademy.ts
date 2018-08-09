@@ -1,6 +1,12 @@
 export class UserAcademy {
-    academicQual_userId:String
-    academicQualification:String
+    profileId:String
+    qualification:String
+    instituteName:String
+    yearOfJoining:String
+    yearOfCompletion:String
+    instituteType:String
+    stream:String
+    marks:String
 
     constructor(){}
 }

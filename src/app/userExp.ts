@@ -1,6 +1,10 @@
 export class UserExp {
-    experience_userId:String
-    experience:String
+    profileId:String
+    organizationName:String
+    role:String
+    startDate:String
+    endDate:String
+    message:String
 
     constructor(){}
 }

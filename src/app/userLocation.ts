@@ -1,6 +1,10 @@
 export class UserLocation {
-    location_userId:String
-    location:String
-
+    profileId:String
+    address:String
+    city:String
+    pin:String
+    state:String
+    country:String
+    
     constructor(){}
 }

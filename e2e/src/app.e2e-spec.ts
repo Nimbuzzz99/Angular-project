@@ -7,8 +7,14 @@ describe('workspace-project App', () => {
     page = new AppPage();
   });
 
-  it('should display welcome message', () => {
+  it('should display header', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('Welcome to final-angular!');
+    expect(page.getParagraphText()).toEqual('Welcome to Matchmaker');
   });
+ 
+  it('should display PI title', () => {
+    page.navigateTo();
+    expect(page.getCardTitle()).toEqual('Personal Information');
+  });  
+
 });

@@ -1,0 +1,24 @@
+<form (submit)="addPost_Skill()">
+  <div class="card">
+   <div class="card-body">
+    <h2>Skills</h2> 
+    <br>
+    <input placeholder="Profile Id" type="text" [(ngModel)]="newPost_Skill.profileId" name="profileId">
+    <br>
+    <br>
+    <input placeholder="Skill" type="text" [(ngModel)]="newPost_Skill.skill" name="skill">
+    <br>
+    <br>
+    <input placeholder="Level" type="text" [(ngModel)]="newPost_Skill.level" name="level">
+    <br>
+    <br>
+    <input placeholder="Duration" type="text" [(ngModel)]="newPost_Skill.noOfMonths" name="months">
+    <br>
+    <br>
+    <input placeholder="Further usage" type="text" [(ngModel)]="newPost_Skill.furtherUsage" name="use">
+    <br>
+    <br>
+   <button color="warn" type="submit" value="submit">Post</button>
+ </div>
+ </div>
+</form>

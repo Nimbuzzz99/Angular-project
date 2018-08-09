@@ -2,29 +2,30 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
-import {MatInputModule , MatFormFieldModule} from '@angular/material';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule,
-   MatListModule, MatCardModule, MatGridListModule, MatDividerModule} from '@angular/material';
-
 
 import { AppComponent } from './app.component';
 import { UserService } from './user.service';
+import { PersonalInfoComponent } from './personal-info/personal-info.component';
+import { SkillsComponent } from './skills/skills.component';
+import { ExperienceComponent } from './experience/experience.component';
+import { LocationComponent } from './location/location.component';
+import { ProjectsComponent } from './projects/projects.component';
+import { CertificatesComponent } from './certificates/certificates.component';
+import { AcademicQualificationsComponent } from './academic-qualifications/academic-qualifications.component';
 
 @NgModule({
   declarations: [
-    AppComponent 
+    AppComponent,
+    PersonalInfoComponent,
+    SkillsComponent,
+    ExperienceComponent,
+    LocationComponent,
+    ProjectsComponent,
+    CertificatesComponent,
+    AcademicQualificationsComponent 
   ],
   imports: [
-    BrowserModule, HttpClientModule, FormsModule, MatFormFieldModule,
-    BrowserAnimationsModule, MatInputModule,MatToolbarModule,
-    MatButtonModule,
-    MatSidenavModule,
-    MatIconModule,
-    MatListModule,
-    MatCardModule,
-    MatGridListModule,
-    MatDividerModule
+    BrowserModule, HttpClientModule, FormsModule
   ],
   providers: [UserService],
   bootstrap: [AppComponent]

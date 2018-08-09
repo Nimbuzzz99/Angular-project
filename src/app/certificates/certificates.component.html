@@ -1,0 +1,39 @@
+<form (submit)="addPost_Certificates()">
+    <div class="card">
+      <div class="card-body">
+      <h2>Certificates</h2>  
+      <br>
+      <input placeholder="Profile Id" type="text" [(ngModel)]="newPost_Certificates.profileId" name="profileId">
+      
+      <br>
+      
+      <br>
+      <input placeholder="Training Id" type="text" [(ngModel)]="newPost_Certificates.trainingId" name="trainId">
+
+      <br>
+      
+      <br>
+      <input placeholder="Training name" type="text" [(ngModel)]="newPost_Certificates.trainingName" name="trainName">
+
+      <br>
+      
+      <br>
+      <input placeholder="Authority" type="text" [(ngModel)]="newPost_Certificates.authority" name="authority">
+
+      <br>
+      
+      <br>
+      <input placeholder="Duration" type="text" [(ngModel)]="newPost_Certificates.duration" name="duration">
+
+      <br>
+      
+      <br>
+      <input placeholder="Shills tested" type="text" [(ngModel)]="newPost_Certificates.skillsTested" name="skillTest">
+
+      <br>
+      <br>
+  
+      <button color="warn" type="submit" value="submit">Post</button>
+      </div>
+      </div>
+  </form>

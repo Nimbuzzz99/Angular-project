@@ -1,9 +1,16 @@
 export class UserPI {
-    userId:String
+    profileId:String
     name:String
     age:String
-    contactNo:String
+    mobile:String
     email:String
+    picture:String
+    dob:String
+    gender:String
+    facebook:String
+    linkedin:String
+    github:String
+    bloodGroup:String
 
     constructor() {}
 }

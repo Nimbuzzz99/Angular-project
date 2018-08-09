@@ -1,0 +1,48 @@
+<form (submit)="addPost_Academy()">
+    <div class="card">
+     <div class="card-body">
+      <h2>Academics</h2>
+      <br>
+      <input placeholder="Profile Id" type="text" [(ngModel)]="newPost_Academy.profileId" name="profileId">
+    
+      <br>
+    
+      <br>
+      <input placeholder="Qualification" type="text" [(ngModel)]="newPost_Academy.qualification" name="qualification">
+      
+      <br>
+
+      <br>
+      <input placeholder="Institute Name" type="text" [(ngModel)]="newPost_Academy.instituteName" name="instituteName">
+      
+      <br>
+
+      <br>
+      <input placeholder="Joining Year" type="text" [(ngModel)]="newPost_Academy.yearOfJoining" name="joinYear">
+
+      <br>
+
+      <br>
+      <input placeholder="Completion Year" type="text" [(ngModel)]="newPost_Academy.yearOfCompletion" name="completeYear">
+
+      <br>
+
+      <br>
+      <input placeholder="Institute Type" type="text" [(ngModel)]="newPost_Academy.instituteType" name="instituteType">
+
+      <br>
+
+      <br>
+      <input placeholder="Stream" type="text" [(ngModel)]="newPost_Academy.stream" name="stream">
+
+      <br>
+
+      <br>
+      <input placeholder="Marks" type="text" [(ngModel)]="newPost_Academy.marks" name="marks">
+    
+     <br>
+     <br>
+     <button color="warn" type="submit" value="submit">Post</button>
+    </div>  
+    </div>  
+</form>

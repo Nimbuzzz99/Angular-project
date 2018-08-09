@@ -1,6 +1,9 @@
 export class UserSkill {
-    skills_userId:String
-    skills:String
+    profileId:String
+    skill:String
+    level:String
+    noOfMonths:String
+    furtherUsage:String
 
     constructor(){}
 }
