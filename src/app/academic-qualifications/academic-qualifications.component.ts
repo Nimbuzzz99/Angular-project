@@ -10,17 +10,19 @@ import { UserAcademy } from '.././userAcademy';
 })
 export class AcademicQualificationsComponent implements OnInit {
   private newPost_Academy;
+  
 
   constructor(private userService: UserService) { }
 
   ngOnInit() {
     this.newPost_Academy = new UserAcademy();
+    
   }
 
   addPost_Academy() {
     this.userService.addPost_Academy(this.newPost_Academy).subscribe(() => {
       console.log("posted");
     });
-    }
+    } 
 
 }
