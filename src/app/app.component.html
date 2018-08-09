@@ -11,19 +11,56 @@
       </ul>
     </div>
 </nav>      
-<h1>Welcome to Matchmaker</h1>
-<div class="container">   
-    <app-personal-info></app-personal-info>
+<h1 id="welcome">Welcome to Matchmaker</h1>
 
-    <app-skills></app-skills> 
-    
-    <app-experience></app-experience>
-     
-    <app-location></app-location>
+<!-- <input type="button" id="add-btn" value="+"/> -->
+<div class="dropdown">
+  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Search by
+  <span class="caret"></span></button>
+  <ul class="dropdown-menu">
+    <li><a href="#">Personal Information</a></li>
+    <li><a href="#">Skills</a></li>
+    <li><a href="#">Experience</a></li>
+    <li><a href="#">Location</a></li>
+    <li><a href="#">Projects</a></li>
+    <li><a href="#">Training and Certification</a></li>
+    <li><a href="#">Academic Qualification</a></li>
+  </ul>
+</div>
 
-    <app-projects></app-projects>
-    
-    <app-certificates></app-certificates>
-
-    <app-academic-qualifications></app-academic-qualifications>   
-</div>   
+<div class="container">
+  <div class="tabbable">
+    <ul class="nav nav-tabs">
+      <li class="active"><a href="#tab1" data-toggle="tab">Personal Information</a></li>
+      <li><a href="#tab2" data-toggle="tab">Skills</a></li>
+      <li><a href="#tab3" data-toggle="tab">Experience</a></li>
+      <li><a href="#tab4" data-toggle="tab">Location</a></li>
+      <li><a href="#tab5" data-toggle="tab">Projects</a></li>
+      <li><a href="#tab6" data-toggle="tab">Certificates</a></li>
+      <li><a href="#tab7" data-toggle="tab">Academic Qualifications</a></li>
+    </ul>
+    <div class="tab-content">
+      <div class="tab-pane active" id="tab1">
+        <app-personal-info></app-personal-info>
+      </div>
+      <div class="tab-pane" id="tab2">
+       <app-skills></app-skills>
+      </div>
+      <div class="tab-pane" id="tab2">
+       <app-experience></app-experience>
+      </div>
+      <div class="tab-pane" id="tab3">
+        <app-location></app-location>
+      </div>
+      <div class="tab-pane" id="tab4">
+        <app-projects></app-projects> 
+      </div>
+      <div class="tab-pane" id="tab5">
+       <app-certificates></app-certificates>
+      </div>
+      <div class="tab-pane" id="tab6">
+        <app-academic-qualifications></app-academic-qualifications>   
+      </div>
+      </div>
+    </div>
+  </div>      
