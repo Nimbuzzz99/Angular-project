@@ -10,17 +10,23 @@ import { UserCertificates } from '.././userCertificates';
 })
 export class CertificatesComponent implements OnInit {
   private newPost_Certificates;
+  private getPost_Certificates;
+  private Train_check;
 
-  constructor(private userService: UserService) { }
+  constructor(private userService: UserService) { 
+    this.Train_check = false;
+  }
 
   ngOnInit() {
     this.newPost_Certificates = new UserCertificates();
+    this.getPost_Certificates = new UserCertificates();
   }
 
   addPost_Certificates() {
     this.userService.addPost_Certificates(this.newPost_Certificates).subscribe(() => {
-      console.log("posted");
     });
+    this.Train_check = true;
+    this.getPost_Certificates = this.newPost_Certificates;
     }
 
 }

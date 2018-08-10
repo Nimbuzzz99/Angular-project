@@ -10,17 +10,23 @@ import { UserLocation } from '.././userLocation';
 })
 export class LocationComponent implements OnInit {
   private newPost_Loc ;
+  private getPost_Loc;
+  private Loc_check;
 
-  constructor(private userService: UserService) { }
+  constructor(private userService: UserService) { 
+    this.Loc_check = false;
+  }
 
   ngOnInit() {
     this.newPost_Loc = new UserLocation();
+    this.getPost_Loc = new UserLocation();
   }
 
   addPost_Location() {
     this.userService.addPost_Location(this.newPost_Loc).subscribe(() => {
-      console.log("posted");
     });
+    this.Loc_check = true;
+    this.getPost_Loc = this.newPost_Loc;
     }
 
 }

@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
-
+import { AppRoutingModule , routingComponents } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { UserService } from './user.service';
 import { PersonalInfoComponent } from './personal-info/personal-info.component';
@@ -22,10 +22,11 @@ import { AcademicQualificationsComponent } from './academic-qualifications/acade
     LocationComponent,
     ProjectsComponent,
     CertificatesComponent,
-    AcademicQualificationsComponent 
+    AcademicQualificationsComponent,
+    routingComponents
   ],
   imports: [
-    BrowserModule, HttpClientModule, FormsModule
+    BrowserModule, HttpClientModule, FormsModule, AppRoutingModule
   ],
   providers: [UserService],
   bootstrap: [AppComponent]

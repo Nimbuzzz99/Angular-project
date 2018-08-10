@@ -10,19 +10,25 @@ import { UserAcademy } from '.././userAcademy';
 })
 export class AcademicQualificationsComponent implements OnInit {
   private newPost_Academy;
+  private getPost_Academy;
+  private Acad_check;
   
 
-  constructor(private userService: UserService) { }
+  constructor(private userService: UserService) { 
+    this.Acad_check = false;
+  }
 
   ngOnInit() {
     this.newPost_Academy = new UserAcademy();
+    this.getPost_Academy = new UserAcademy();
     
   }
 
   addPost_Academy() {
     this.userService.addPost_Academy(this.newPost_Academy).subscribe(() => {
-      console.log("posted");
     });
+    this.Acad_check = true;
+    this.getPost_Academy = this.newPost_Academy;
     } 
 
 }

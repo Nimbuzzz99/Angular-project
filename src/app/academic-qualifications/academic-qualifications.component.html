@@ -1,48 +1,68 @@
-<form (submit)="addPost_Academy()">
+<div *ngIf="Acad_check">
     <div class="card">
-     <div class="card-body">
-      <h2>Academics</h2>
-      <br>
-      <input placeholder="Profile Id" type="text" [(ngModel)]="newPost_Academy.profileId" name="profileId">
-    
-      <br>
-    
-      <br>
-      <input placeholder="Qualification" type="text" [(ngModel)]="newPost_Academy.qualification" name="qualification">
-      
-      <br>
+        <div class="card-body">
+            <h2>Academics</h2>
 
-      <br>
-      <input placeholder="Institute Name" type="text" [(ngModel)]="newPost_Academy.instituteName" name="instituteName">
-      
-      <br>
+        </div>
+    </div>
+</div>
 
-      <br>
-      <input placeholder="Joining Year" type="text" [(ngModel)]="newPost_Academy.yearOfJoining" name="joinYear">
 
-      <br>
 
-      <br>
-      <input placeholder="Completion Year" type="text" [(ngModel)]="newPost_Academy.yearOfCompletion" name="completeYear">
 
-      <br>
+<div class="modal fade" id="myModal7">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Academics</h4>
+                <button class="close" data-dismiss="modal">&times;</button>
 
-      <br>
-      <input placeholder="Institute Type" type="text" [(ngModel)]="newPost_Academy.instituteType" name="instituteType">
+            </div>
+            <!-- end modal-header -->
+            <div class="modal-body">
+                <form class="form-horizontal" (submit)="addPost_Academy()">
+                    <div class="form-group">
+                        <input class="form-control" placeholder="Profile Id" type="text" [(ngModel)]="newPost_Academy.profileId" name="profileId">
+                    </div>
 
-      <br>
+                    <div class="form-group">
+                        <input class="form-control" placeholder="Qualification" type="text" [(ngModel)]="newPost_Academy.qualification" name="qualification">
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" placeholder="Institute Name" type="text" [(ngModel)]="newPost_Academy.instituteName" name="instituteName">
+                    </div>
 
-      <br>
-      <input placeholder="Stream" type="text" [(ngModel)]="newPost_Academy.stream" name="stream">
+                    <div class="form-group">
+                        <input class="form-control" placeholder="Joining Year" type="text" [(ngModel)]="newPost_Academy.yearOfJoining" name="joinYear">
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" placeholder="Completion Year" type="text" [(ngModel)]="newPost_Academy.yearOfCompletion" name="completeYear">
+                    </div>
 
-      <br>
+                    <div class="form-group">
+                        <input class="form-control" placeholder="Institute Type" type="text" [(ngModel)]="newPost_Academy.instituteType" name="instituteType">
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" placeholder="Stream" type="text" [(ngModel)]="newPost_Academy.stream" name="stream">
+                    </div>
 
-      <br>
-      <input placeholder="Marks" type="text" [(ngModel)]="newPost_Academy.marks" name="marks">
-    
-     <br>
-     <br>
-     <button color="warn" type="submit" value="submit">Post</button>
-    </div>  
-    </div>  
-</form>
+                    <div class="form-group">
+                        <input class="form-control"placeholder="Marks" type="text" [(ngModel)]="newPost_Academy.marks" name="marks">
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-success pull-right submitbtn" type="submit">Send!</button>
+                    </div>
+                </form>
+            </div>
+            <!-- end modal-body -->
+
+            <div class="modal-footer">
+                <button class="btn btn-default" data-dismiss="modal" type="button">Close</button>
+            </div>
+            <!-- end modal-footer -->
+        </div>
+        <!-- end modal-content -->
+    </div>
+    <!-- end modal-dialog -->
+</div>
+<!-- end myModal -->

@@ -10,16 +10,23 @@ import { UserProject } from '.././userProject';
 })
 export class ProjectsComponent implements OnInit {
   private newPost_Project;
-  constructor(private userService: UserService) { }
+  private getPost_Project;
+  private Proj_check;
+
+  constructor(private userService: UserService) {
+    this.Proj_check = false;
+   }
 
   ngOnInit() {
     this.newPost_Project = new UserProject();
+    this.getPost_Project = new UserProject();
   }
 
   addPost_Project() {
     this.userService.addPost_Project(this.newPost_Project).subscribe(() => {
-      console.log("posted");
     });
+    this.Proj_check = true;
+    this.getPost_Project = this.newPost_Project;
     }
 
 }

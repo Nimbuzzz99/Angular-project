@@ -19,38 +19,25 @@
    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Search by
    <span class="caret"></span></button>
    <ul class="dropdown-menu">
-    <li><a href="#" (click)="select_PI()">Personal Information</a></li>
-    <li><a href="#" (click)="select_Skills()">Skills</a></li>
-    <li><a href="#" (click)="select_Exp()">Experience</a></li>
-    <li><a href="#" (click)="select_Loc()">Location</a></li>
-    <li><a href="#" (click)="select_Proj()">Projects</a></li>
-    <li><a href="#" (click)="select_Train()">Training and Certification</a></li>
-    <li><a href="#" (click)="select_Academy()">Academic Qualification</a></li>
+    <li><a href="#myModal1" data-toggle="modal">Personal Info</a></li>
+    <li><a href="#myModal2" data-toggle="modal">Skills</a></li>
+    <li><a href="#myModal3" data-toggle="modal">Experience</a></li>
+    <li><a href="#myModal4" data-toggle="modal">Location</a></li>
+    <li><a href="#myModal5" data-toggle="modal">Projects</a></li>
+    <li><a href="#myModal6" data-toggle="modal">Training and Certification</a></li>
+    <li><a href="#myModal7" data-toggle="modal">Academic Qualification</a></li>
    </ul>
  </div>
 
  <br>
- <div *ngIf="PI_check">
+ 
    <app-personal-info></app-personal-info>
- </div>
- <div *ngIf="Skills_check">
    <app-skills></app-skills>
- </div>
- <div *ngIf="Exp_check">
    <app-experience></app-experience>
- </div>
- <div *ngIf="Loc_check">
    <app-location></app-location>
- </div>
- <div *ngIf="Proj_check">
    <app-projects></app-projects> 
- </div>
- <div *ngIf="Train_check">
    <app-certificates></app-certificates>
- </div>
- <div *ngIf="Acad_check">
    <app-academic-qualifications></app-academic-qualifications>
- </div>
  
  <!-- <div class="tabbable">
     <ul class="nav nav-tabs">

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { UserService } from '.././user.service';
 import { UserPI } from '.././userPI';
+// import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-personal-info',
@@ -9,17 +10,24 @@ import { UserPI } from '.././userPI';
   providers: [UserService]
 })
 export class PersonalInfoComponent implements OnInit {
-  private newPost_PI ;
-  constructor(private userService: UserService) { }
+  private newPost_PI;
+  private getPost_PI;
+  private PI_check;
+  
+  constructor(private userService: UserService) { 
+    this.PI_check = false;
+  }
 
   ngOnInit() {
     this.newPost_PI = new UserPI();
+    this.getPost_PI = new UserPI();
   }
 
   addPost_PI() {
     this.userService.addPost_PI(this.newPost_PI).subscribe(() => {
-      console.log("posted");
     });
+    this.PI_check = true;
+    this.getPost_PI = this.newPost_PI;
     }
-
+    
 }

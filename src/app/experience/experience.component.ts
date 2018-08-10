@@ -10,17 +10,23 @@ import { UserExp } from '.././userExp';
 })
 export class ExperienceComponent implements OnInit {
   private newPost_Exp ;
+  private getPost_Exp;
+  private Exp_check;
 
-  constructor(private userService: UserService) { }
+  constructor(private userService: UserService) {
+    this.Exp_check = false;
+   }
 
   ngOnInit() {
     this.newPost_Exp = new UserExp();
+    this.getPost_Exp = new UserExp();
   }
 
   addPost_Exp() {
     this.userService.addPost_Exp(this.newPost_Exp).subscribe(() => {
-      console.log("posted");
     });
+    this.Exp_check = true;
+    this.getPost_Exp = this.newPost_Exp;
     }
 
 }
