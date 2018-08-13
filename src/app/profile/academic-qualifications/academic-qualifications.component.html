@@ -1,8 +1,15 @@
-<div *ngIf="Acad_check">
+<div *ngIf="acad_check">
     <div class="card">
         <div class="card-body">
             <h2>Academics</h2>
-
+            Profile Id: {{getPost_Academy.profileId}}
+            <br> Qualification: {{getPost_Academy.profileId}}
+            <br> Institute Name: {{getPost_Academy.instituteName}}
+            <br> Year of Joining: {{getPost_Academy.yearOfJoining}}
+            <br> Year of Completion: {{getPost_Academy.yearOfCompletion}}
+            <br> Institute Type: {{getPost_Academy.instituteType}}
+            <br> Stream: {{getPost_Academy.stream}}
+            <br> Marks: {{getPost_Academy.marks}}
         </div>
     </div>
 </div>
@@ -47,10 +54,10 @@
                     </div>
 
                     <div class="form-group">
-                        <input class="form-control"placeholder="Marks" type="text" [(ngModel)]="newPost_Academy.marks" name="marks">
+                        <input class="form-control" placeholder="Marks" type="text" [(ngModel)]="newPost_Academy.marks" name="marks">
                     </div>
                     <div class="form-group">
-                        <button class="btn btn-success pull-right submitbtn" type="submit">Send!</button>
+                        <button class="btn btn-dark pull-right submitbtn" type="submit">Send!</button>
                     </div>
                 </form>
             </div>

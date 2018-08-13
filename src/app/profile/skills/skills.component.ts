@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { UserService } from '.././user.service';
-import { UserSkill } from '.././userSkill';
+import { UserService } from '../../user.service';
+import { UserSkill } from '../../userSkill';
 
 @Component({
   selector: 'app-skills',
@@ -11,10 +11,10 @@ import { UserSkill } from '.././userSkill';
 export class SkillsComponent implements OnInit {
   private newPost_Skill ;
   private getPost_Skill;
-  private Skills_check;
+  private skills_check;
 
   constructor(private userService: UserService) {
-    this.Skills_check = false;
+    this.skills_check = false;
    }
 
   ngOnInit() {
@@ -25,7 +25,7 @@ export class SkillsComponent implements OnInit {
   addPost_Skill() {
     this.userService.addPost_Skill(this.newPost_Skill).subscribe(() => {
     });
-    this.Skills_check = true;
+    this.skills_check = true;
     this.getPost_Skill = this.newPost_Skill;
     }
 

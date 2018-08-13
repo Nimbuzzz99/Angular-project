@@ -1,8 +1,22 @@
-<div *ngIf="Proj_check">
+<div *ngIf="proj_check">
   <div class="card">
     <div class="card-body">
       <h2>Projects</h2>
-      
+      Profile Id: {{getPost_Project.profileId}}
+      <br> Project Id: {{getPost_Project.projectId}}
+      <br> Project At: {{getPost_Project.projectAt}}
+      <br> Role: {{getPost_Project.role}}
+      <br> Department: {{getPost_Project.department}}
+      <br> Project Location: {{getPost_Project.projectLocation}}
+      <br> Project Title: {{getPost_Project.projectTitle}}
+      <br> Team Size: {{getPost_Project.teamSize}}
+      <br> Start Date: {{getPost_Project.from}}
+      <br> End Date: {{getPost_Project.to}}
+      <br> Synopsis: {{getPost_Project.synopsis}}
+      <br> Url: {{getPost_Project.url}}
+      <br> DemoURL: {{getPost_Project.demoURL}}
+      <br> Skills: {{getPost_Project.skills}}
+      <br> Message: {{getPost_Project.message}}
     </div>
   </div>
 </div>
@@ -77,7 +91,7 @@
             <input class="form-control" placeholder="Message" type="text" [(ngModel)]="newPost_Project.message" name="mess">
           </div>
           <div class="form-group">
-            <button class="btn btn-success pull-right submitbtn" type="submit">Send!</button>
+            <button class="btn btn-dark pull-right submitbtn" type="submit">Send!</button>
           </div>
         </form>
       </div>

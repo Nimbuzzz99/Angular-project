@@ -1,76 +1,34 @@
-<nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <a class="navbar-brand" id="check" href="#">Matchmaker App</a>
-      </div>
-      <ul class="nav navbar-nav navbar-right">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">Jobs</a></li>
-        <li><a href="#">Notifications</a></li>
-        <li><a href="#">Settings</a></li>
-      </ul>
-    </div>
-</nav>      
+<header class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+		<div class="container">
+			<button class="navbar-toggler" data-target="#navbarCollapse" data-toggle="collapse" type="button">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<a class="navbar-brand" id="heading">MatchMaker</a>
+			<!-- navbar starts here -->
+			<nav class="navbar-collapse collapse" id="navbarCollapse">
+				<ul class="navbar-nav">
+					<li class="nav-item active"><a href="#" class="nav-link">Home</a></li>
+					<li class="nav-item"><a href="#" class="nav-link">Help</a></li>
+				</ul>
+				<form class="form-inline">
+					<input type="text" class="form-control" id="searchbar">
+				</form>
+				<ul class="navbar-nav ml-auto">
+					<li class="dropdown nav-item"><a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown"><span class="glyphicon glyphicon-user">User</span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#" class="dropdown-item"><span class="glyphicon glyphicon-wrench"></span>Settings</a></li>
+							<li><a href="#" class="dropdown-item"><span class="glyphicon glyphicon-refresh"></span>Profile</a></li>
+							<li class="divider"></li>
+							<li><a href="#" class="dropdown-item">Log Out</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+			<!-- navbar ends here -->
 
-<!-- <input type="button" id="add-btn" value="+"/> -->
-<div class="container">
- <h1 id="welcome">Welcome to Matchmaker</h1>
- <div class="dropdown">
-   <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Search by
-   <span class="caret"></span></button>
-   <ul class="dropdown-menu">
-    <li><a href="#myModal1" data-toggle="modal">Personal Info</a></li>
-    <li><a href="#myModal2" data-toggle="modal">Skills</a></li>
-    <li><a href="#myModal3" data-toggle="modal">Experience</a></li>
-    <li><a href="#myModal4" data-toggle="modal">Location</a></li>
-    <li><a href="#myModal5" data-toggle="modal">Projects</a></li>
-    <li><a href="#myModal6" data-toggle="modal">Training and Certification</a></li>
-    <li><a href="#myModal7" data-toggle="modal">Academic Qualification</a></li>
-   </ul>
- </div>
 
- <br>
- 
-   <app-personal-info></app-personal-info>
-   <app-skills></app-skills>
-   <app-experience></app-experience>
-   <app-location></app-location>
-   <app-projects></app-projects> 
-   <app-certificates></app-certificates>
-   <app-academic-qualifications></app-academic-qualifications>
- 
- <!-- <div class="tabbable">
-    <ul class="nav nav-tabs">
-      <li class="active"><a href="#tab1" data-toggle="tab">Personal Information</a></li>
-      <li><a href="#tab2" data-toggle="tab">Skills</a></li>
-      <li><a href="#tab3" data-toggle="tab">Experience</a></li>
-      <li><a href="#tab4" data-toggle="tab">Location</a></li>
-      <li><a href="#tab5" data-toggle="tab">Projects</a></li>
-      <li><a href="#tab6" data-toggle="tab">Certificates</a></li>
-      <li><a href="#tab7" data-toggle="tab">Academic Qualifications</a></li>
-    </ul>
-    <div class="tab-content">
-      <div class="tab-pane active" id="tab1">
-        <app-personal-info></app-personal-info>
-      </div>
-      <div class="tab-pane" id="tab2">
-       <app-skills></app-skills>
-      </div>
-      <div class="tab-pane" id="tab2">
-       <app-experience></app-experience>
-      </div>
-      <div class="tab-pane" id="tab3">
-        <app-location></app-location>
-      </div>
-      <div class="tab-pane" id="tab4">
-        <app-projects></app-projects> 
-      </div>
-      <div class="tab-pane" id="tab5">
-       <app-certificates></app-certificates>
-      </div>
-      <div class="tab-pane" id="tab6">
-        <app-academic-qualifications></app-academic-qualifications>   
-      </div>
-      </div>
-    </div>
-  </div>       -->
+		</div>
+	</header>
+
+
+<router-outlet></router-outlet>

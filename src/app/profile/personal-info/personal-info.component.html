@@ -1,8 +1,19 @@
-<div *ngIf="PI_check">
+<div *ngIf="pi_check">
   <div class="card">
     <div class="card-body">
       <h2>Personal Information</h2>
-      {{getPost_PI.name}}
+      Profile Id: {{getPost_PI.profileId}}
+      <br> Name: {{getPost_PI.name}}
+      <br> Age: {{getPost_PI.age}}
+      <br> Contact no.: {{getPost_PI.mobile}}
+      <br> Email: {{getPost_PI.email}}
+      <br> Picture: {{getPost_PI.picture}}
+      <br> Date of Birth: {{getPost_PI.dob}}
+      <br> Gender: {{getPost_PI.gender}}
+      <br> Blood Group: {{getPost_PI.bloodGroup}}
+      <br> Facebook: {{getPost_PI.facebook}}
+      <br> LinkedIn: {{getPost_PI.linkedin}}
+      <br> Github: {{getPost_PI.github}}
     </div>
   </div>
 
@@ -64,7 +75,7 @@
             <input class="form-control" placeholder="Github" type="text" [(ngModel)]="newPost_PI.github" name="github">
           </div>
           <div class="form-group">
-            <button class="btn btn-success pull-right submitbtn" type="submit">Send!</button>
+            <button class="btn btn-dark pull-right submitbtn" type="submit">Send!</button>
           </div>
         </form>
       </div>
