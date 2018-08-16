@@ -2,7 +2,7 @@
   <div class="card">
     <div class="card-body">
       <form class="form-horizontal" [formGroup]="userForm" (ngSubmit)="profileSubmit()">
-        <h4>Register</h4>
+        <h4>Login</h4>
         <div class="form-group">
           <label for="username">Username</label>
           <input type="text" formControlName="username" class="form-control" name=username/>
@@ -10,14 +10,11 @@
             <div *ngIf="username.errors.required">
               Username required.
             </div>
-            <div *ngIf="username.errors.usernameExists">
-              Username already exists.
-            </div>
           </div>
         </div>
-        <div class="form-group">
+        <!-- <div class="form-group">
           <label for="email">Email</label>
-          <input type="email" formControlName="email" class="form-control"  name="email" />
+          <input type="email" formControlName="email" class="form-control" name="email" />
           <div *ngIf="email.dirty && email.errors" class="error">
             <div *ngIf="email.errors.required">
               Email required.
@@ -29,13 +26,14 @@
               Email already exists.
             </div>
           </div>
-        </div>
+        </div> -->
         <div class="form-group">
           <label for="password">Password</label>
-          <input type="password" class="form-control" name="password" formControlName="password"/>
+          <input type="password" class="form-control" name="password" formControlName="password" />
         </div>
         <div class="form-group">
-          <a [routerLink]="['/login']"><button class="btn btn-danger" [disabled]="userForm.invalid">Register</button></a>
+          <button class="btn btn-danger" [disabled]="userForm.invalid">Login</button>&nbsp;
+          <!-- <a [routerLink]="['/login']" class="btn btn-link">Cancel</a> -->
         </div>
       </form>
     </div>

@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { HttpModule } from '@angular/http';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule , routingComponents } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { UserService } from './user.service';
@@ -15,7 +15,9 @@ import { CertificatesComponent } from './profile/certificates/certificates.compo
 import { AcademicQualificationsComponent } from './profile/academic-qualifications/academic-qualifications.component';
 import { ProfileComponent } from './profile/profile.component';
 import { RegistrationComponent } from './registration/registration.component';
-
+import { ExistingEmailValidatorDirective } from './registration/customValidaters/existingEmail';
+import { ExistingUsernameValidatorDirective } from './registration/customValidaters/existingUserName';
+import { LoginComponent } from './login/login.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,10 +30,13 @@ import { RegistrationComponent } from './registration/registration.component';
     AcademicQualificationsComponent,
     routingComponents,
     ProfileComponent,
-    RegistrationComponent
+    RegistrationComponent,
+    ExistingEmailValidatorDirective,
+    ExistingUsernameValidatorDirective,
+    LoginComponent
   ],
   imports: [
-    BrowserModule, HttpClientModule, FormsModule, AppRoutingModule,HttpModule
+    BrowserModule, HttpClientModule, FormsModule, AppRoutingModule,HttpModule,ReactiveFormsModule
   ],
   providers: [UserService],
   bootstrap: [AppComponent]

@@ -13,8 +13,8 @@ export class PersonalInfoComponent implements OnInit {
   private newPost_PI;
   private getPost_PI;
   private pi_check;
-  
-  constructor(private userService: UserService) { 
+
+  constructor(private userService: UserService) {
     this.pi_check = false;
   }
 
@@ -29,5 +29,5 @@ export class PersonalInfoComponent implements OnInit {
     this.pi_check = true;
     this.getPost_PI = this.newPost_PI;
     }
-    
+
 }
