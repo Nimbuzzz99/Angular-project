@@ -23,6 +23,8 @@ import { AuthGuard } from './guards/auth.guard';
 import {AuthenticationService} from './services/authentication.service';
 import { ErrorInterceptor } from './interceptors/error.interceptor';
 import { JwtInterceptor } from './interceptors/jwt.interceptor';
+import { MaterialModule } from './material';
+import { UserComponent } from './user/user.component';
 // export function tokenGetter() {
 //   return localStorage.getItem('access_token');
 // }
@@ -42,11 +44,12 @@ import { JwtInterceptor } from './interceptors/jwt.interceptor';
     RegistrationComponent,
     ExistingEmailValidatorDirective,
     ExistingUsernameValidatorDirective,
-    LoginComponent
+    LoginComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule, HttpClientModule, FormsModule,
-    AppRoutingModule, HttpModule, ReactiveFormsModule
+    AppRoutingModule, HttpModule, ReactiveFormsModule, MaterialModule
     // JwtModule.forRoot({
     //   config: {
     //     tokenGetter: tokenGetter,
